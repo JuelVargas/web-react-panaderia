@@ -1,17 +1,21 @@
 
-import Button from './Components/Button'
-import Navbar from './Components/Navbar'
-import { useState } from 'react'
+import { Navbar } from './Components'
+import { Hero } from './sections'
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
 
+
+function App() {
+  
   return (
-    <>
+    <main className='bg-b-dark'>
       <Navbar/>
-     
-    </>
+
+      <section>
+        <Hero/>
+       
+      </section>
+    </main>
      
   )
 }
