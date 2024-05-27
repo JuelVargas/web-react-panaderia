@@ -1,7 +1,6 @@
 import { hamburger } from '../assets/icons';
 import { logoPanaderia } from '../assets/images';
 import { navLinks } from '../constants';
-import './navbar.css'
 
 function Navbar() {
     return (
@@ -20,7 +19,7 @@ function Navbar() {
                         <li key={link.label}>
                             <a 
                             href={link.href}
-                            className='font-monserrat leading-normal text-lg text-black hover:text-shadow-sm shadow-yellow-500'
+                            className='font-monserrat leading-normal text-lg text-text hover:text-shadow-sm shadow-primary'
                             >
                                 {link.label}
                             </a>

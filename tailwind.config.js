@@ -28,13 +28,13 @@ export default {
         montserrat: ['Montserrat', 'sans-serif'],
       },
       colors: {
-        'primary': "#ECEEFF05",
-        "coral-red": "#FF6452",
-        "slate-gray": "#6D6D6D",
-        "pale-blue": "#F5F6FF",
-        "white-400": "rgba(255, 255, 255, 0.80)",
-        "b-dark": "#f7ede2"
-      },
+        'text': '#100e00',
+        'background': '#fffcec',
+        'darkbackground': '#141100',
+        'primary': '#fed814',
+        'secondary': '#9bfe7a',
+        'accent': '#3dfe47',
+       },       
       boxShadow: {
         '3xl': '0 10px 40px rgba(0, 0, 0, 0.1)'
       },

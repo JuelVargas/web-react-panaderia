@@ -1,4 +1,4 @@
-
+import { imagenPan, imagenPanBlanco, imagenPanTrigo } from "../assets/images";
 
 export const navLinks = [
     {href: "#inicio", label: "inicio"},
@@ -10,3 +10,18 @@ export const navLinks = [
 
 
 ]
+
+export const breads = [
+    {
+        id: 1,
+        bigBread: imagenPan,
+    },
+    {
+        id: 2,
+        bigBread: imagenPanBlanco,
+    },
+    {
+        id: 3,
+        bigBread: imagenPanTrigo,
+    },
+];

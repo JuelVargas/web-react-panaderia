@@ -1,40 +1,42 @@
-import { imagenPan } from "../assets/images"
+import { imagenPan} from "../assets/images"
+import { arrowRight } from "../assets/icons";
+import { breads } from "../constants";
+
 
 import { useState } from 'react'
+import { BreadCard, Button} from "../Components";
 
 const Hero = () => {
 
-    const [count, setCount] = useState(0);
+    const [imgBigBread, setImgBigBread] = useState(imagenPan);
 
-    function handdleClick() {
-        setCount(count + 1)
-    }
+   
 
     return (
         <section id="inicio"
             className="w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-container xl:pl-20"
         >
             <div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full max-xl:padding-x pt-28" >
-                <p className="text-xl font-montserrat text-coral-red"
+                <p className="text-xl font-montserrat text-primary "
                 >Nuestros panes de Temporada</p>
-                <h1 className="mt-5 font-palanquin text-black text-8xl max-sm:text-[72px] max-sm:leading-[82px] font-bold"
+                <h1 className="mt-5 font-palanquin text-text text-8xl max-sm:text-[72px] max-sm:leading-[82px] font-bold"
                 >
                     <span className=" xl:whitespace-nowrap relative z-10 pr-10"
                     >Con Nuevos</span>
                     <br />
                     Sabores Para tu
-                    <span className="text-coral-red inline-block mt-3 ml-4"
+                    <span className="text-primary inline-block mt-3 ml-4"
                     >Paladar</span>
                 </h1>
-                <p className="font-monserrat text-slate-gray  text-lg leading-8 mt-6 mb-8 sm:max-w-sm">Disfruta del sabor artesanal: panes frescos y deliciosos todos los días en nuestra panadería.</p>
+                <p className="font-monserrat text-text/100 text-lg leading-8 mt-6 mb-8 sm:max-w-sm">Disfruta del sabor artesanal: panes frescos y deliciosos todos los días en nuestra panadería.</p>
 
                 <div  >
-                <button className='px-4 py-2 rounded-xl bg-green-500 text-pale-blue ml-[100px]' onClick={handdleClick}>Ver productos</button>
+                    <Button label="Ver productos" iconUrl={arrowRight} />
+
+                </div>
 
             </div>
-
-            </div>
-            <div className="relative flex-1 flex justify-center items-center xl:min-h-screen bg-primary"
+            <div className="relative flex-1 flex justify-center items-center xl:min-h-screen bg-gradient-to-b from-secondary/40 to-primary/30"
             >
                 <div className=" absolute top-0 bg-[#ffffff1f] rounded-full z-1 w-44 h-96 blur-3xl rotate-90"
                     width={50}
@@ -44,12 +46,26 @@ const Hero = () => {
                     width={50}
                     height={50}></div>
                 <img className="z-10"
-                    src={imagenPan}
+                    src={imgBigBread}
                     alt="imagen pan"
                     width={500}
                     height={500} />
+
+                <div className="flex sm:gap-6 gap-4 absolute bottom-[5%] sm:left-[10%] max-sm:px-6">
+                    {breads.map((bread) => (
+                        <div key={bread.id}>
+                            <BreadCard
+                                imgURL={bread}
+                                changeImgBread={(bigBread) =>setImgBigBread(bigBread)
+                                }
+                                imgBigBread={imgBigBread}
+
+                            />
+                        </div>
+                    ))}
+                </div>
             </div>
-            
+
 
         </section>
     )
