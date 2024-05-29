@@ -19,7 +19,7 @@ const Hero = () => {
             <div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full max-xl:padding-x pt-28" >
                 <p className="text-xl font-montserrat text-primary "
                 >Nuestros panes de Temporada</p>
-                <h1 className="mt-5 font-palanquin text-text text-8xl max-sm:text-[72px] max-sm:leading-[82px] font-bold"
+                <h1 className="mt-5 font-palanquin text-text text-8xl max-sm:text-[52px] max-sm:leading-[52px] font-bold"
                 >
                     <span className=" xl:whitespace-nowrap relative z-10 pr-10"
                     >Con Nuevos</span>
@@ -36,16 +36,10 @@ const Hero = () => {
                 </div>
 
             </div>
-            <div className="relative flex-1 flex justify-center items-center xl:min-h-screen bg-gradient-to-b from-secondary/40 to-primary/30"
+            <div className="relative flex-1 flex justify-center items-center max-xl:items-start  max-xl:min-h-[700px] max-md:min-h-[700px] max-sm:min-h-[400px] py-2 bg-gradient-to-b from-secondary/40 to-primary/30"
             >
-                <div className=" absolute top-0 bg-[#ffffff1f] rounded-full z-1 w-44 h-96 blur-3xl rotate-90"
-                    width={50}
-                    height={50}></div>
-
-                <div className=" absolute bg-yellow-500/50 rounded-full z-1 w-44 h-96 blur-3xl rotate-45"
-                    width={50}
-                    height={50}></div>
-                <img className="z-10"
+                
+                <img className="z-10 max-sm:w-[300px]"
                     src={imgBigBread}
                     alt="imagen pan"
                     width={500}
