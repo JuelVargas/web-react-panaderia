@@ -55,6 +55,8 @@
   .info-text {
     @apply font-montserrat text-slate-gray text-lg leading-7;
   }
-
+  .menu {
+    @apply  flex-col gap-0
+  }
 
 }
