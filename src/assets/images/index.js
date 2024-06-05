@@ -7,6 +7,8 @@ import imagenPanMaiz from './pan-maiz.png'
 import imagenPanTrigo from './pan-trigo.png'
 import imagenPanBlanco from './pan-blanco.png'
 import imagenBreadWhite from './bread-white.png'
+import imagenPanMolde from './panmolde.webp'
+import imagenMarraqueta from './marraqueta.webp'
 
 export {
     logoPanaderia,
@@ -17,5 +19,7 @@ export {
     imagenPanMaiz,
     imagenPanTrigo,
     imagenPanBlanco,
-    imagenBreadWhite
+    imagenBreadWhite,
+    imagenPanMolde,
+    imagenMarraqueta
 }

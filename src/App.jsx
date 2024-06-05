@@ -9,7 +9,7 @@ import './App.css'
 function App() {
 
   return (
-    <main className='bg-b-dark'>
+    <main className='bg-b-dark '>
       <Navbar />
       
       <Routes>

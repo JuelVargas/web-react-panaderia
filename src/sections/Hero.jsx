@@ -5,6 +5,7 @@ import { breads } from "../constants";
 
 import { useState } from 'react'
 import { BreadCard, Button} from "../Components";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
 
@@ -14,12 +15,12 @@ const Hero = () => {
 
     return (
         <section id="inicio"
-            className="w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-container xl:pl-20"
+            className="w-full flex xl:flex-row flex-col justify-center min-h-[89vh] gap-10 max-container xl:pl-20 pt-4"
         >
-            <div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full max-xl:padding-x pt-8 sm:pt-20" >
+            <div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full max-xl:padding-x " >
                 <p className="text-xl font-montserrat text-primary "
                 >Nuestros panes de Temporada</p>
-                <h1 className="mt-5 font-palanquin text-text text-8xl max-sm:text-[52px] max-sm:leading-[52px] font-bold"
+                <h1 className=" font-palanquin text-text text-8xl max-sm:text-[52px] max-sm:leading-[52px] font-bold"
                 >
                     <span className=" xl:whitespace-nowrap relative  pr-10"
                     >Con Nuevos</span>
@@ -31,7 +32,7 @@ const Hero = () => {
                 <p className="font-monserrat text-text/100 text-lg leading-8 mt-6 mb-8 sm:max-w-sm">Disfruta del sabor artesanal: panes frescos y deliciosos todos los días en nuestra panadería.</p>
 
                 <div  >
-                    <Button label="Ver productos" iconUrl={arrowRight} />
+                    <Link to="/Recetas" ><Button label="Ver productos" iconUrl={arrowRight} /></Link>
 
                 </div>
 
