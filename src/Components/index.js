@@ -5,5 +5,5 @@ import BreadCard from "./BreadCard";
 export {
     Navbar,
     Button,
-    BreadCard
+    BreadCard,
 }
