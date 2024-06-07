@@ -1,4 +1,5 @@
 import { imagenPan, imagenPanBlanco, imagenPanTrigo, imagenMarraqueta, imagenPanMolde, imagenPanIntegral, imagenPanMaiz } from "../assets/images";
+import { imgUser} from "../assets/icons";
 
 export const navLinks = [
     {href: "/Hero", label: "inicio"},
@@ -108,4 +109,285 @@ export const recetas = [
       ]
     }
   ];
-  
+
+// Constante Actores
+  export const actores = [
+    {
+      id: '1',
+      cargo: "Gerente General",
+      imgURL: imgUser,
+      descripcion: "Planifica, organiza, dirige, controla y coordina todas las actividades de la panadería, también contrata al personal adecuado y evaluar el progreso del negocio.",
+    },
+    {
+      id: '2',
+      cargo: "Jefe de Finanzas",
+      imgURL: imgUser, 
+      descripcion: "Gestiona los recursos financieros de la panadería, realizar consultas bancarias y se asegura de que no haya problemas de sobreendeudamiento."
+    },
+
+    {
+      id: '3',
+      cargo: "Jefe de Producción",
+      imgURL: imgUser, 
+      descripcion: "Supervisa las líneas de producción, se encarga de la atención a proveedores y garantiza el cumplimiento de trabajo establecido, supervisa al personal y el mantenimiento de maquinaria y equipos."
+    },
+    {
+      id: '4',
+      cargo: "Panadero",
+      imgURL: imgUser, 
+      descripcion: "Elabora masas y panes siguiendo las normas de higiene y calidad establecidas. También se asegura de que el personal a su cargo cumpla con los estándares de la empresa."
+    },
+    {
+      id: '5',
+      cargo: "Personal de Almacen",
+      imgURL: imgUser, 
+      descripcion: "El personal de almacén en una panadería recibe y verifica materias primas y productos, los organiza y almacena adecuadamente, realiza inventarios y prepara pedidos. Mantienen el almacén limpio y ordenado, inspeccionan la calidad de los productos, registran actividades."
+    },
+    {
+      id: '6',
+      cargo: "Jefe de Logistica",
+      imgURL: imgUser, 
+      descripcion: "Coordina el transporte y distribución de productos terminados a puntos de venta o directamente a clientes."
+    },
+    //Actores secundarios
+    {
+      id: '7',
+      cargo: "Repartidor",
+      imgURL: imgUser, 
+      descripcion: "Entrega productos a clientes o puntos de venta, Tambien asegura la correcta manipulación y transporte de los productos para mantener su calidad."
+    },
+    {
+      id: '8',
+      cargo: "Proveedor",
+      imgURL: imgUser, 
+      descripcion: "Un proveedor en una panadería suministra materias primas y productos necesarios para la producción, asegura la calidad y puntualidad en las entregas, y mantiene una comunicación constante para coordinar pedidos y resolver cualquier incidencia."
+    },
+  ];
+
+    
+// Constante Inventario
+  export const inventario = [
+    {
+      id: '1',
+      nombre: "Harina",
+      cantidad: "500 kg",
+      unidad: "kilo gramos",
+    },
+    {
+      id: '2',
+      nombre: "Harina Integral de Trigo",
+      cantidad: "400 kg",
+      unidad: "kilo gramos",
+    },
+    {
+      id: '3',
+      nombre: "Azúcar",
+      cantidad: "200 kg",
+      unidad: "kilo gramos",
+    },
+    {
+      id: '4',
+      nombre: "Azucar Morena",
+      cantidad: "100 kg",
+      unidad: "kilo gramos",
+    },
+    {
+      id: '5',
+      nombre: "Levadura",
+      cantidad: "10 kg",
+      unidad: "kilo gramos",
+    },
+    {
+      id: '6',
+      nombre: "Levadura Seca",
+      cantidad: "5 kg",
+      unidad: "kilo gramos",
+    },
+    {
+      id: '7',
+      nombre: "Mantequilla",
+      cantidad: "50 kg",
+      unidad: "kilo gramos",
+    },
+    {
+      id: '8',
+      nombre: "Aceite",
+      cantidad: "70 L",
+      unidad: "Litros",
+    },
+    {
+      id: '9',
+      nombre: "Leche Condensada",
+      cantidad: "80 lt",
+      unidad: "latas",
+    },
+    {
+      id: '10',
+      nombre: "Huevos",
+      cantidad: "50 paq",
+      unidad: "paquetes",
+    },
+    {
+      id: '11',
+      nombre: "Vainilla",
+      cantidad: "20 kg",
+      unidad: "kilo gramos",
+    },
+    {
+      id: '12',
+      nombre: "Sal",
+      cantidad: "10 kg",
+      unidad: "kilo gramos",
+    },
+    {
+      id: '13',
+      nombre: "Elote",
+      cantidad: "80 uds",
+      unidad: "unidades",
+    },
+    {
+      id: '14',
+      nombre: "Polvo de Hornear",
+      cantidad: "3 kg",
+      unidad: "kilo gramos",
+    },
+    {
+      id: '15',
+      nombre: "Agua",
+      cantidad: "1000 L",
+      unidad: "Litros",
+    }
+  ];
+
+//Constante Reportes
+  export const reportes = [
+    {
+      id: '1',
+      tipo: "Reporte de Producción",
+      descripcion: "Detalle diario, semanal y mensual sobre la cantidad de cada tipo de pan producido, eficiencia de producción y costos involucrados.",
+      campos: [
+        "Fecha",
+        "Tipo de Pan",
+        "Cantidad Producida",
+        "Costo de Producción"
+      ],
+      valores: [
+        "06/06/2024",
+        "Pan Integral",
+        "100",
+        "20 $"
+      ]
+    },
+    {
+      id: '2',
+      tipo: "Reporte de Inventario",
+      descripcion: "Niveles de inventario de materias primas y productos terminados, así como la rotación de inventario.",
+      campos: [
+        "Fecha",
+        "Tipo de Inventario",
+        "Cantidad Disponible",
+        "Valor del Inventario"
+      ],
+      valores: [
+        "06/06/2024",
+        "Harina",
+        "100 kg",
+        "50 $"
+      ]
+    },
+    {
+      id: '3',
+      tipo: "Reporte de Ventas",
+      descripcion: "Información sobre la cantidad de cada tipo de pan vendido, ingresos generados y análisis de productos más vendidos.",
+      campos: [
+        "Fecha",
+        "Tipo de Pan",
+        "Cantidad Vendida",
+        "Ingresos Generados",
+        "Productos Más Vendidos"
+      ],
+      valores: [
+        "06/06/2024",
+        "Pan de Maiz",
+        "80",
+        "30 $",
+        "Pan de Maiz"
+      ]
+    },
+    {
+      id: '4',
+      tipo: "Reporte Financiero",
+      descripcion: "Resumen de los ingresos, costos y gastos, mostrando la rentabilidad de la panadería.",
+      campos: [
+        "Fecha",
+        "Ingresos",
+        "Costos",
+        "Gastos",
+        "Rentabilidad"
+      ],
+      valores: [
+        "06/06/2024",
+        "1000 $",
+        "600 $",
+        "500 $",
+        "800 $"
+      ]
+    },
+    {
+      id: '5',
+      tipo: "Reporte de Recursos Humanos",
+      descripcion: "Registro de la asistencia y puntualidad de los empleados, así como la evaluación del rendimiento del personal.",
+      campos: [
+        "Fecha",
+        "Empleado",
+        "Asistencia",
+        "Puntualidad",
+        "Evaluación de Rendimiento"
+      ],
+      valores: [
+        "06/06/2024",
+        "Alex Baena",
+        "Presente",
+        "A tiempo",
+        "Excelente"
+      ]
+    },
+    {
+      id: '6',
+      tipo: "Reporte de Marketing",
+      descripcion: "Evaluación de la efectividad de promociones y descuentos en las ventas, así como la satisfacción del cliente.",
+      campos: [
+        "Fecha",
+        "Campaña",
+        "Ventas Generadas",
+        "ROI",
+        "Satisfacción del Cliente"
+      ],
+      valores: [
+        "06/06/2024",
+        "Descuento de Verano",
+        "500",
+        "50%",
+        "Muy Satisfecho"
+      ]
+    },
+    {
+      id: '7',
+      tipo: "Reporte de Calidad",
+      descripcion: "Resultados de inspecciones y pruebas de calidad en los productos, incluyendo tasas de defectos o productos rechazados.",
+      campos: [
+        "Fecha",
+        "Producto",
+        "Inspecciones Realizadas",
+        "Defectos Encontrados",
+        "Acciones Correctivas"
+      ],
+      valores: [
+        "06/06/2024",
+        "Pan Integral",
+        "500",
+        "5",
+        "Ajuste en la temperatura del horno"
+      ]
+    }
+  ];
