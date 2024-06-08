@@ -6,10 +6,12 @@ const Inventario = () => {
       id="inventario"
       className="w-full flex justify-center"
     >
-      <div className="mx-3 border-2 border-slate-200 border-dashed p-2 rounded-lg bg-slate-100 mt-4 sm:mt-8 sm:w-[500px] lg:mt-20 lg:w-3/6 lg:p-10">
+      <div className="max-sm:mx-4 sm:w-4/5 lg:w-3/6 bg-slate-200/30 flex justify-center ">
+        
+      <div className="mx-3 border-2 border-slate-200 border-dashed p-2 rounded-lg bg-slate-100 mt-4 sm:mt-8 sm:w-[500px] lg:mt-8 lg:w-4/5 lg:p-10">
 
         <div
-          className="flex justify-between items-center mb-4  px-4 py-4  bg-slate-300 rounded-xl"
+          className="flex justify-between items-center mb-4  px-4 py-4  bg-slate-300/30 rounded-xl"
         >
           <h3
             className="text-xl h-full flex items-center w-4/6 rounded-e-full "
@@ -56,6 +58,7 @@ const Inventario = () => {
             </div>
           ))
         }
+      </div>
       </div>
     </section>
   )
