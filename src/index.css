@@ -52,9 +52,6 @@
     @apply sm:pb-24 pb-12;
   }
 
-  .info-text {
-    @apply font-montserrat text-slate-gray text-lg leading-7;
-  }
   .menu {
     @apply  flex-col gap-0
   }
