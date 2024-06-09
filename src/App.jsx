@@ -1,5 +1,5 @@
 
-import { Navbar } from './Components'
+import { Navbar, Footer } from './Components'
 import { Hero, Maquinaria, Recetas, Reportes, Personal, Inventario } from './sections'
 import { Routes, Route } from 'react-router-dom'
 import './App.css'
@@ -22,6 +22,7 @@ function App() {
         <Route path='/inventario' element={<Inventario />} />
 
       </Routes>
+      <Footer/>
     </main>
 
   )
