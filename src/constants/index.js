@@ -1,5 +1,5 @@
 import { imagenPan, imagenPanBlanco, imagenPanTrigo, imagenMarraqueta, imagenPanMolde, imagenPanIntegral, imagenPanMaiz, imagenHarina, imagenHarinaIntegral, imagenAzucar, imagenAzucarMorena, imagenLevadura, imagenLevaduraSeca, imagenMantequilla, imagenAceite, imagenLecheCondensada, imagenHuevo, imagenVainilla, imagenSal, imagenElote, imagenPolvoHornear, imagenAgua } from "../assets/images";
-import { imgUser } from "../assets/icons";
+import { imgPanadero, imgPersonal, imgProveedor, imgRepartidor, imgUser } from "../assets/icons";
 
 export const navLinks = [
   { href: "/Hero", label: "inicio" },
@@ -134,13 +134,13 @@ export const actores = [
   {
     id: '4',
     cargo: "Panadero",
-    imgURL: imgUser,
+    imgURL: imgPanadero,
     descripcion: "Elabora masas y panes siguiendo las normas de higiene y calidad establecidas. También se asegura de que el personal a su cargo cumpla con los estándares de la empresa."
   },
   {
     id: '5',
     cargo: "Personal de Almacen",
-    imgURL: imgUser,
+    imgURL: imgPersonal,
     descripcion: "El personal de almacén en una panadería recibe y verifica materias primas y productos, los organiza y almacena adecuadamente, realiza inventarios y prepara pedidos. Mantienen el almacén limpio y ordenado, inspeccionan la calidad de los productos, registran actividades."
   },
   {
@@ -153,13 +153,13 @@ export const actores = [
   {
     id: '7',
     cargo: "Repartidor",
-    imgURL: imgUser,
+    imgURL: imgRepartidor,
     descripcion: "Entrega productos a clientes o puntos de venta, Tambien asegura la correcta manipulación y transporte de los productos para mantener su calidad."
   },
   {
     id: '8',
     cargo: "Proveedor",
-    imgURL: imgUser,
+    imgURL: imgProveedor,
     descripcion: "Un proveedor en una panadería suministra materias primas y productos necesarios para la producción, asegura la calidad y puntualidad en las entregas, y mantiene una comunicación constante para coordinar pedidos y resolver cualquier incidencia."
   },
 ];

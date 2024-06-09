@@ -1,5 +1,5 @@
-import { Suspense } from "react"
-import { Canvas, useLoader } from "@react-three/fiber"
+import { Suspense, useRef } from "react"
+import { Canvas, useFrame, useLoader } from "@react-three/fiber"
 import { OrbitControls, Center, Environment } from "@react-three/drei"
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 
@@ -7,7 +7,10 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 
 function Bakery() {
   const gltf = useLoader(GLTFLoader, '../src/assets/models/maple_bakery/bakery.gltf')
-  gltf.scene.rotation.y = 3;
+  gltf.scene.rotation.y = 3.8;
+  gltf.scene.rotation.x = 0.1;
+
+  
 
   return <primitive object={gltf.scene} scale={0.0012} />
 }
@@ -44,7 +47,7 @@ const Maquinaria = () => {
               <Suspense fallback={null}>
                 <mesh position={[0, 0, 0]}   >
                   <Environment preset="sunset" />
-                  <OrbitControls enableZoom={false} enableDamping={false} />
+                  <OrbitControls enableZoom={false} enableDamping={false} enablePan={false} rotateSpeed={0.03}/>
                   <ambientLight />
                   <Center>
                     <Bakery />
@@ -72,7 +75,7 @@ const Maquinaria = () => {
                 <Suspense fallback={null}>
                   <mesh position={[0, 0, 0]}>
                     <Environment preset="sunset" />
-                    <OrbitControls enableZoom={false} enableDamping={false} />
+                    <OrbitControls enableZoom={false} enableDamping={false} enablePan={false} rotateSpeed={0.03} />
                     <ambientLight />
                     <Center>
                       <Model url={"../src/assets/models/dough_mixer/scene.gltf"} scale={8} rotation={0} />
@@ -91,7 +94,7 @@ const Maquinaria = () => {
                 <Suspense fallback={null}>
                   <mesh position={[0, 0, 0]}>
                     <Environment preset="sunset" />
-                    <OrbitControls enableZoom={false} enableDamping={false} />
+                    <OrbitControls enableZoom={false} enableDamping={false} enablePan={false} rotateSpeed={0.03}/>
                     <ambientLight />
                     <meshBasicMaterial color={"gray"} />
                     <Center>
@@ -111,7 +114,7 @@ const Maquinaria = () => {
                 <Suspense fallback={null}>
                   <mesh position={[0, 0, 0]}>
                     <Environment preset="sunset" />
-                    <OrbitControls enableZoom={false} enableDamping={false} />
+                    <OrbitControls enableZoom={false} enableDamping={false} enablePan={false} rotateSpeed={0.03}/>
                     <ambientLight />
                     <Center>
                       <Model url={"../src/assets/models/bread_oven/oven.gltf"} scale={0.09} rotation={Math.PI} />
