@@ -1,4 +1,4 @@
-import logoPanaderia from './logo-panaderia.png'
+import logoPanaderia from './logo-bakery.png'
 import imagenPan from './bread.png'
 import imagenCanaston from './canaston.png'
 

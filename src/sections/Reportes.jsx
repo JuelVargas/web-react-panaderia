@@ -3,11 +3,12 @@ import { reportes } from "../constants"
 
 const Reportes = () => {
   return (
-    <section>
+    <section className="w-full flex justify-center">
+      <div className="max-sm:mx-4 sm:w-11/12 lg:w-11/12 xl:w-3/6 bg-slate-200/30 flex justify-center ">
       <div className="flex flex-col items-center w-full mx-2 px-4 py-8">
         {
           reportes.map((reporte) => (
-            <div key={reporte.id} className="shadow-xl rounded-xl my-2 p-4  md:w-4/5 lg:w-5/6 xl:w-3/5">
+            <div key={reporte.id} className="shadow-xl rounded-xl my-2 p-4  md:w-11/12 lg:w-11/12 xl:w-11/12">
               <div>
                 <h3 className="text-xl font-medium text-center">{reporte.tipo}</h3>
                 <p
@@ -31,6 +32,7 @@ const Reportes = () => {
             </div>
           ))
         }
+      </div>
       </div>
     </section>
   )
